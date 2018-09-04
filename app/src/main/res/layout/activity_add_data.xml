@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/evNama"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_alignLeft="@+id/evNumber"
+        android:layout_alignStart="@+id/evNumber"
+        android:layout_below="@+id/evNumber">
+
+        <RadioButton
+            android:id="@+id/rbSim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="SIM 1" />
+
+        <RadioButton
+            android:id="@+id/rbSim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rbSim1"
+            android:layout_alignStart="@+id/rbSim1"
+            android:layout_below="@+id/rbSim1"
+            android:layout_marginTop="17dp"
+            android:text="SIM 2" />
+
+    </RadioGroup>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/men_blue" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_marginBottom="30dp"
+        android:text="Simpan"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/evNumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/evNama"
+        android:layout_alignStart="@+id/evNama"
+        android:layout_below="@+id/evNama"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Number"/>
+
+</RelativeLayout>
